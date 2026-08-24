@@ -19,7 +19,7 @@
 	<div class="entry-content clearfix">
 		<?php // Show Excerpt via Theme Options
 			$options = get_option('namba_theme_options');
-			if( $options['show-excerpt'] && ! get_post_format() ) : ?>
+			if( ! empty( $options['show-excerpt'] ) && ! get_post_format() ) : ?>
 				<?php the_excerpt(); ?>
 		<?php else : ?>
 				<?php the_content(); ?>
@@ -50,7 +50,7 @@
 	</div><!--end .entry-meta -->
 
 	<?php // Include Share-Btns
-		if( $options['share-posts'] ) : ?>
+		if( ! empty( $options['share-posts'] ) ) : ?>
 		<?php get_template_part( 'share'); ?>
 	<?php endif; ?>
 
