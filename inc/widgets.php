@@ -397,9 +397,6 @@
 	}
 }
 
-register_widget('namba_sociallinks');
-
-
 /*-----------------------------------------------------------------------------------*/
 /* Namba Recent Posts Widget
 /*-----------------------------------------------------------------------------------*/
@@ -535,9 +532,6 @@ class namba_recentposts extends WP_Widget {
 	}
 }
 
-register_widget('namba_recentposts');
-
-
 /*-----------------------------------------------------------------------------------*/
 /* Namba Post Formats (circles) Widget
 /*-----------------------------------------------------------------------------------*/
@@ -657,9 +651,6 @@ class namba_postformats extends WP_Widget {
 	}
 }
 
-register_widget('namba_postformats');
-
-
 /*-----------------------------------------------------------------------------------*/
 /* Namba Headlines Widget
 /*-----------------------------------------------------------------------------------*/
@@ -710,5 +701,15 @@ class namba_headlines extends WP_Widget {
 	}
 }
 
-register_widget('namba_headlines');
-
+/**
+ * Registered on widgets_init, which is where WordPress asks for it.
+ * At file scope the widget's constructor translated its own name before
+ * init, which WordPress 6.7 reports on every request.
+ */
+function namba_register_widgets() {
+	register_widget( 'namba_sociallinks' );
+	register_widget( 'namba_recentposts' );
+	register_widget( 'namba_postformats' );
+	register_widget( 'namba_headlines' );
+}
+add_action( 'widgets_init', 'namba_register_widgets' );
