@@ -22,6 +22,7 @@
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'twitter' => '', 'facebook' => '', 'googleplus' => '', 'appnet' => '', 'flickr' => '', 'instagram' => '', 'picasa' => '', 'fivehundredpx' => '', 'youtube' => '', 'vimeo' => '', 'dribbble' => '', 'ffffound' => '', 'pinterest' => '', 'behance' => '', 'deviantart' => '', 'squidoo' => '', 'slideshare' => '', 'lastfm' => '', 'grooveshark' => '', 'soundcloud' => '', 'foursquare' => '', 'github' => '', 'linkedin' => '', 'xing' => '', 'wordpress' => '', 'tumblr' => '', 'rss' => '', 'rsscomments' => '' ) );
 		extract( $args );
 		$title = $instance['title'];
 		$twitter = $instance['twitter'];
@@ -216,6 +217,7 @@
    }
 
    function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'twitter' => '', 'facebook' => '', 'googleplus' => '', 'appnet' => '', 'flickr' => '', 'instagram' => '', 'picasa' => '', 'fivehundredpx' => '', 'youtube' => '', 'vimeo' => '', 'dribbble' => '', 'ffffound' => '', 'pinterest' => '', 'behance' => '', 'deviantart' => '', 'squidoo' => '', 'slideshare' => '', 'lastfm' => '', 'grooveshark' => '', 'soundcloud' => '', 'foursquare' => '', 'github' => '', 'linkedin' => '', 'xing' => '', 'wordpress' => '', 'tumblr' => '', 'rss' => '', 'rsscomments' => '' ) );
 		$title = esc_attr($instance['title']);
 		$twitter = esc_attr($instance['twitter']);
 		$facebook = esc_attr($instance['facebook']);
@@ -411,6 +413,7 @@ class namba_recentposts extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'postnumber' => '', 'cat' => '' ) );
 		extract( $args );
 		$title = $instance['title'];
 		$postnumber = $instance['postnumber'];
@@ -508,6 +511,7 @@ class namba_recentposts extends WP_Widget {
    }
 
    function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'postnumber' => '', 'cat' => '' ) );
    		$title = esc_attr($instance['title']);
    		$postnumber = esc_attr($instance['postnumber']);
 		$cat = esc_attr($instance['cat']);
@@ -546,6 +550,7 @@ class namba_postformats extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'pfimage' => null, 'pfgallery' => null, 'pfquote' => null, 'pfstatus' => null, 'pflink' => null, 'pfvideo' => null, 'pfaudio' => null ) );
 		extract( $args );
 		$title = $instance['title'];
 		$pfimage = isset( $instance['pfimage'] );
@@ -596,6 +601,7 @@ class namba_postformats extends WP_Widget {
    }
 
    function form( $instance ) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'pfimage' => null, 'pfgallery' => null, 'pfquote' => null, 'pfstatus' => null, 'pflink' => null, 'pfvideo' => null, 'pfaudio' => null ) );
    		$title = esc_attr ( $instance['title'] );
    		$pfimage = isset( $instance['pfimage'] );
    		$pfgallery = isset( $instance['pfgallery'] );
@@ -665,6 +671,7 @@ class namba_headlines extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '' ) );
 		extract( $args );
 		$title = $instance['title'];
 		$before_widget = '<div class="widget widget_namba_headlines">';
@@ -686,6 +693,7 @@ class namba_headlines extends WP_Widget {
    }
 
    function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '' ) );
    		$title = esc_attr($instance['title']);
 
 		?>

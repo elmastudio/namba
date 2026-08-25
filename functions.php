@@ -565,3 +565,14 @@ function namba_button( $atts, $content = null ) {
 		return $out;
 }
 add_shortcode('button', 'namba_button');
+
+/* __php8_option_defaults: never let the theme options be false or miss a key (PHP 8). */
+function namba_php8_option_defaults( $options = array() ) {
+	$fallback = array_fill_keys( array( 'show-excerpt', 'share-posts', 'standard_color', 'bg_color', 'image_color', 'gallery_color', 'quote_color', 'link_color', 'video_color', 'audio_color', 'status_color', 'theme_layout', 'custom_logo', 'custom_logo_width', 'custom_logo_height', 'custom_footertext', 'share-singleposts', 'custom-css' ), '' );
+	if ( function_exists( 'namba_get_default_theme_options' ) ) {
+		$fallback = array_merge( $fallback, (array) namba_get_default_theme_options() );
+	}
+	return wp_parse_args( is_array( $options ) ? $options : array(), $fallback );
+}
+add_filter( 'default_option_namba_theme_options', 'namba_php8_option_defaults' );
+add_filter( 'option_namba_theme_options', 'namba_php8_option_defaults' );
