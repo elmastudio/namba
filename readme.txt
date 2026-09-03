@@ -3,6 +3,10 @@ For the detailed theme documentation visit:
 - https://www.elmastudio.de/en/docs/namba/ (English)
 - https://www.elmastudio.de/doks/namba/ (German)
 
+Version 1.1.8 (25/08/2026)
+---
+- Fix: PHP 8 compatibility. Theme options and widget settings no longer trigger warnings; attachment pages, related posts and comment display fixed where affected.
+
 Version 1.1.7 (16/08/2021)
 ---
 - Bugfix: Remove support for API Manager plugin.
@@ -58,9 +62,3 @@ Version 1.0.1 (December 1th 2013)
 Version 1.0 (November 18th 2013)
 ---
 - Namba theme release
-
-Changelog:
-
-Version 1.1.8 (25/08/2026)
------------------------------------------------------------------------------------------------------------------------------
-- Fix: PHP 8 compatibility. Theme options and widget settings no longer trigger warnings; attachment pages, related posts and comment display fixed where affected.
