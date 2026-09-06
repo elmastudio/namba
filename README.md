@@ -4,7 +4,7 @@ Namba is a Premium blog and magazine theme with a minimal, fresh, responsive web
 
 By [Elmastudio](https://www.elmastudio.de/en/).
 
-- **Version:** 1.1.7
+- **Version:** 1.1.8
 - **Theme page:** https://www.elmastudio.de/en/themes/namba/
 - **Documentation:** [English](https://www.elmastudio.de/en/docs/namba/) / [German](https://www.elmastudio.de/doks/namba/)
 
@@ -16,6 +16,10 @@ Download this repository as a ZIP and upload it in **Appearance → Themes → A
 cd wp-content/themes
 git clone https://github.com/elmastudio/namba.git
 ```
+
+## Updates
+
+Install the Git Updater plugin (https://git-updater.com/) and WordPress will offer new versions of this theme as regular theme updates, straight from GitHub.
 
 ## Status
 
